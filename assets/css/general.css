@@ -121,4 +121,7 @@ body::-webkit-scrollbar-thumb {
     .hero-section {
         min-height: max-content;
     }
+    #homeSearch,.search-home-form{
+        width: 100% !important;
+    }
 }

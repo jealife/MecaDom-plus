@@ -80,7 +80,7 @@
     height: 100%;
     width: 100%;
     backdrop-filter: blur(5px);
-    background: #d8d9e7;
+    background: #eaebf1;
     background: linear-gradient(180deg,  12%, #ffffffab 100%);}
 
 .hero-section .logo img {
@@ -122,7 +122,7 @@
 
 
 #homeSearch {
-    padding: 0.9rem 0.5rem;
+    padding: 0.9rem 3.55rem 0.9rem 0.8rem;
     border-radius: 1em;
     font-size: 0.95rem;
     transition: all ease-in-out 0.3s;
@@ -130,15 +130,16 @@
 
 #homeSearch:focus {
     outline: 1px solid #a6b4c8;
-    box-shadow: #a6b4c8 10px 10px 24px 70%, #ffffff -12px -12px 20px 80%;
+    box-shadow: #a6b4c8 10px 10px 24px , #ffffff -12px -12px 20px;
 
 }
 
 input[type='search']::-webkit-search-cancel-button {
-    color: green;
+    /* color: green;
     outline: 1px solid red;
-    border: 1px solid red;
+    border: 1px solid red; */
     /* -webkit-appearance: none;	 */
+    margin-left: 2px;
     height: 15px;
     width: 15px;
     border-radius: 50%;
