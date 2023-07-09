@@ -30,7 +30,17 @@
     font-size: 0.9rem;
     padding: 9px 12px;
     border-radius: 2em;
-    border: var(--text-color) 1px solid;
+    outline: var(--vibrant) 1px solid;
+    color:var(--primary) ;
+    transition: all cubic-bezier(0.39, 0.575, 0.565, 1) .5s;
+}
+.btn :hover{
+    
+    outline: none;
+    color: #ffffff;
+    background: var(--vibrant);   
+    box-shadow: #a6b4c88a 10px 10px 24px , #ffffff -12px -12px 20px;
+
 }
 
 
@@ -42,11 +52,13 @@
     left: 2%;
 }
 .hand{
+    widows: 200px;
     position: absolute;
     z-index: 100;
     top: 35%;
-    right: 25%;
+    right: 15%;
     transform: translate(60%, 10%);
+
 }
 /* ======================== hero section  ======================== */
 
@@ -61,8 +73,8 @@
     align-items: center;
     gap: 30px;
     min-height: 55vh;
-    min-height: 55dvh;
-    /* background-image: url(https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60); */
+    min-height: 65dvh;
+    background-image: url(https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,15 +92,14 @@
     height: 100%;
     width: 100%;
     backdrop-filter: blur(5px);
-    background: #eaebf1;
+    background: #eaebf1b2;
     background: linear-gradient(180deg,  12%, #ffffffab 100%);
-    padding-bottom: 4rem;
+    padding-bottom: 4rem;    
 }
 
 .hero-section .logo img {
-    width: 70%;
-    filter: drop-shadow( 10px 10px 24px #a6b4c8 );
-    -webkit-backdrop-filter: drop-shadow( #a6b4c8 10px 10px 24px , #ffffff -12px -12px 20px);
+    margin-top: 2rem;
+    width: 50%;
 }
 
 .hero-section-title h1 {

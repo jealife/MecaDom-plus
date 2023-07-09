@@ -110,6 +110,9 @@ body::-webkit-scrollbar-thumb {
         order: 1;
         display: none;
     }
+    .hero-section .logo img {
+        width: 80%;
+    }
 
     .hand {
         position: absolute;
@@ -118,14 +121,17 @@ body::-webkit-scrollbar-thumb {
         width: 230px;
         transform: translate(5%, 15%) !important;
     }
+
     .hero-section {
         min-height: max-content;
     }
-    #homeSearch,.search-home-form{
+
+    #homeSearch,
+    .search-home-form {
         width: 100% !important;
     }
-    .hero-section-title h1{
-        font-size: clamp(2em, calc((var(--vw)*9)/10
-        ),  3em)!important ;
+
+    .hero-section-title h1 {
+        font-size: clamp(4em, calc((var(--vw)*9)/10), 3em);
     }
 }
