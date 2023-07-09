@@ -44,7 +44,7 @@
 .hand{
     position: absolute;
     z-index: 100;
-    top: 50%;
+    top: 35%;
     right: 25%;
     transform: translate(60%, 10%);
 }
@@ -81,15 +81,19 @@
     width: 100%;
     backdrop-filter: blur(5px);
     background: #eaebf1;
-    background: linear-gradient(180deg,  12%, #ffffffab 100%);}
+    background: linear-gradient(180deg,  12%, #ffffffab 100%);
+    padding-bottom: 4rem;
+}
 
 .hero-section .logo img {
     width: 70%;
+    filter: drop-shadow( 10px 10px 24px #a6b4c8 );
+    -webkit-backdrop-filter: drop-shadow( #a6b4c8 10px 10px 24px , #ffffff -12px -12px 20px);
 }
 
 .hero-section-title h1 {
     color: var(--primary);
-    letter-spacing: .3ch;
+    letter-spacing: .1ch;
     line-height: normal;
     word-wrap: break-word;
     hyphens: auto;
@@ -103,7 +107,6 @@
 
 .yellow {
     color: var(--vibrant);
-
 }
 
 .hero-section-content {
@@ -145,7 +148,6 @@ input[type='search']::-webkit-search-cancel-button {
     border-radius: 50%;
     padding: 2px;
     cursor: pointer;
-
 }
 
 .search-home-form button {

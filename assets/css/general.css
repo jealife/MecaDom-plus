@@ -113,7 +113,7 @@ body::-webkit-scrollbar-thumb {
 
     .hand {
         position: absolute;
-        top: 75% !important;
+        top: 80% !important;
         /* right: 65%; */
         width: 230px;
         transform: translate(5%, 15%) !important;
