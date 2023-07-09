@@ -1,0 +1,121 @@
+/* ==================   Font import =============== */
+@font-face {
+    font-family: DM_Sans_regular;
+    src: url(../font/DM_Sans/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: DM_Sans_bold;
+    src: url(../font/DM_Sans/DMSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: DM_Sans_medium;
+    src: url(../font/DM_Sans/DMSans-Medium.ttf);
+}
+
+
+/* ======================== Variables  ===================== */
+:root {
+    /* ====== Conainer  ====== */
+    --container-padding: 20px;
+    --container-width: calc(100%- var(--container-padding)*2);
+    --container-max-width: 1440px;
+
+    /* ====== Colors  ====== */
+    --muted: #cdced0;
+    --primary: #1a237e;
+    --primary-muted: #303f9f;
+    --blue-muted: #7986cb;
+    --vibrant: #ffc107;
+    --yellow-muted: #ffe082;
+    --bg-color: #ecf0f3;
+    --text-color: #111316;
+
+    /* ====== Font Size  ====== */
+
+
+
+}
+
+
+/* ======================== Bases  ======================== */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    padding: 24px 25px;
+    position: relative;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    /* 
+    padding-left: calc(50% - var(--container-width)/2);
+    padding-right: calc(50% - var(--container-width)/2);
+     */
+}
+
+input,
+button {
+
+    border: none;
+}
+
+body {
+    font-family: DM_Sans_regular;
+    background: var(--bg-color);
+    overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: var(--bg-color);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--blue-muted);
+}
+
+
+
+/* ======================== Responsive  ======================== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 14px;
+    }
+
+    main {
+        padding: 15px 14px;
+    }
+
+    .nav .menu {
+        order: 1;
+        display: none;
+    }
+
+    .hand {
+        position: absolute;
+        top: 75% !important;
+        right: 50%;
+        width: 230px;
+        transform: translate(5%, 0%) !important;
+    }
+}
