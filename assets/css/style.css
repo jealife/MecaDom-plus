@@ -100,7 +100,7 @@
     transition: all ease-in-out 0.3s;
     font-size: calc(32px, 100%);
     margin-bottom: 1rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 
 }
