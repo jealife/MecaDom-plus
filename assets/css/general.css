@@ -124,4 +124,8 @@ body::-webkit-scrollbar-thumb {
     #homeSearch,.search-home-form{
         width: 100% !important;
     }
+    .hero-section-title h1{
+        font-size: clamp(2em, calc((var(--vw)*9)/10
+        ),  3em)!important ;
+    }
 }
