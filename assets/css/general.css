@@ -132,6 +132,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     .hero-section-title h1 {
-        font-size: clamp(4em, calc((var(--vw)*9)/10), 3em);
+        font-size: clamp(2em, calc((var(--vw)*9)/10), 3em);
     }
 }
