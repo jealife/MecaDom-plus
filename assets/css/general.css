@@ -118,4 +118,7 @@ body::-webkit-scrollbar-thumb {
         width: 230px;
         transform: translate(5%, 0%) !important;
     }
+    .hero-section {
+        min-height : max-content;
+    }
 }
