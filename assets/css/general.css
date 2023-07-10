@@ -123,7 +123,8 @@ body::-webkit-scrollbar-thumb {
     }
 
     .hero-section {
-        min-height: max-content;
+        min-height: 50vh !important;
+        min-height: 50dvh !important;
     }
 
     #homeSearch,
