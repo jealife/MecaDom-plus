@@ -109,9 +109,9 @@ body::-webkit-scrollbar-thumb {
     .nav .menu {
         order: 1;
         display: none;
-    }
+    } 
     .hero-section .logo img {
-        width: 85%;
+        width: 70% !important;
     }
 
     .hand {
