@@ -94,13 +94,22 @@ nav .menu .link-menu:hover {
 .nav-btn > a {
   padding: 0.3rem 0.6rem;
   border-radius: 5em;
+  transition: .3s;
 }
 
-.nav-btn a:nth-child(1) {
+.login {
   background-color: var(--vibrant);
   color: var(--primary);
 }
-.nav-btn a:nth-child(2) {
+.login:hover{
+    color: #fff;
+    box-shadow: #ffc519be 0px 9px 30px 0px;
+}
+.register:hover{
+    color: #fff;
+    box-shadow: #303f9fa1 0px 9px 30px 0px;
+}
+.register {
   background-color: var(--primary);
   color: var(--bg-color);
 }
@@ -157,6 +166,7 @@ nav .menu .link-menu:hover {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 2rem;
+  gap: 25px;
 }
 .top {
   margin-top: 2rem;
@@ -244,13 +254,28 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-home-form button:hover {
   width: 70px;
 }
+
+
+
+.msg-bottom{
+    display: flex;
+    gap: 10px;
+    width: 340px;
+    align-items: center;
+    font-weight: 600;
+}
+.icon-bottom img{
+    width: 120px;
+}
+
+
 .services-block {
   width: 450px;
   height: max-content;
   position: absolute;
   z-index: 12;
-  top: 80%;
-  left: 80%;
+  top: 78%;
+  left: 78%;
   transform: translate(-50%, -50%);
   bottom: -2px;
   display: flex;
@@ -287,6 +312,7 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: var(--primary);
     color: var(--bg-color);
 }
+
 /*Responsives*/
 @media (max-width: 768px) {
   header {
@@ -372,6 +398,7 @@ input[type="search"]::-webkit-search-cancel-button {
   .hero-section {
     flex-direction: column;
     padding: 0.51rem;
+    min-height: max-content;
   }
   .left-section {
     background-position: left;
@@ -388,13 +415,18 @@ input[type="search"]::-webkit-search-cancel-button {
   .left-section {
     padding-left: 0rem;
   }
+  .left-section-container {
+    gap: 24px;
+  }
   .top {
     gap: 18px;
   }
 
   .services-block {
-    top:0;
-    left: 50%;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
     position: relative;
     width: 100%;
   }
