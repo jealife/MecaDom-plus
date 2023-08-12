@@ -123,7 +123,7 @@ nav .menu .link-menu:hover {
   text-align: center;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   min-height: 100vh;
   min-height: 100dvh;
   /* background-image: url(https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60); */
@@ -423,11 +423,17 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .services-block {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     top: 0;
     left: 0;
     transform: translate(0%, 0%);
     position: relative;
     width: 100%;
   }
+}
+@media (min-width: 320px) and (max-width: 340px){
+    .msg-bottom{
+        width: 100%;
+        justify-content: space-between;
+    }
 }
