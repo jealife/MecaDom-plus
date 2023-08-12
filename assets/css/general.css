@@ -49,7 +49,6 @@
 
 main {
     width: 100%;
-    padding: 24px 25px;
     position: relative;
     gap: 50px;
 }
@@ -77,10 +76,10 @@ button {
 }
 
 body {
-    font-family: DM_Sans_regular;
+    /* font-family: DM_Sans_regular; */
     background: var(--bg-color);
     overflow-x: hidden;
-
+    font-family: 'DM Sans', sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -93,7 +92,9 @@ body::-webkit-scrollbar-thumb {
     background: var(--blue-muted);
 }
 
-
+p,h1{
+    color: var(--text-color);
+}
 
 /* ======================== Responsive  ======================== */
 
