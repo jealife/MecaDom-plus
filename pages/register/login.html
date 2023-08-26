@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bSVDMyVBOWNhbmljaWVufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60">
+    <meta property="og:image" content="https://meca-dom-plus.vercel.app/assets/images/Logo_Mecadom.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion | MECADOM </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/login.css">
+    <link rel="icon" type="image/png" href="https://meca-dom-plus.vercel.app/assets/images/Logo_icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Logotype_Mecadom_png_Fichier 3.png" alt=" Logo MECADOM">
+            </div>
+            <button onclick="showMenu()" id="hamburger_menu" class="button_menu">
+                <i id="bxBtnmenu" class='bx bx-menu'></i>
+                <i id="bxBtnx" style="display: none;" class='bx bx-x'></i>
+            </button>
+            <div class="menu">
+                <a href="https://meca-dom-plus.vercel.app/" class="link-menu">Accueil</a>
+                <a href="#" class="link-menu">Services</a>
+                <a href="#" class="link-menu">Produits</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="left-section">
+            <form action="">
+                <h1 id="formTitle">Connexion</h1>
+
+                <div class="login-sign-up">
+                    <div class="login" id="login">
+                        <input type="email" name="email" autofocus="" autocapitalize="none" autocomplete="email"
+                            placeholder="Email" required>
+
+                        <div class="password-field">
+
+                            <input type="password" id="password" placeholder="Mot de passe" name="password"
+                                autocomplete="current-password" required="">
+                            <!-- <i class='bx bx-show' id="togglePassword"></i> -->
+                            <div class="show-password">
+                                <input type="checkbox" onclick="showPassword()">
+                                <span id="tooglePasswordindicator">Voir</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign-up" id="signUp">
+                        <div class="name">
+                            <input type="text" name="nom" placeholder="Nom" id="lname" required>
+                            <input type="text" name="prenom" placeholder="Prénom" id="fname" required>
+                        </div>
+                        <input type="text" name="email" autocomplete="email" placeholder="Email" id="email" required>
+                        <div class="password-field">
+
+                            <input type="password" id="PasswordSignUp" placeholder="Mot de passe" name="password"
+                                autocomplete="current-password" required="">
+                            <!-- <i class='bx bx-show' id="togglePassword"></i> -->
+                            <div class="show-password">
+                                <input type="checkbox" onclick="showPasswordSignUp()">
+                                <span id="tooglePasswordindicatorSignUp">Voir</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="link-connexion" id="linkLogin">
+                        <a href="#">Mot de passe oublié ?</a>
+                        <span onclick="toggleckeckShow()">S'enregistrer</span>
+                    </div>
+                    <div class="link-connexion" id="linkSignUp">
+                        <span>Vous avez un compte ?</span>
+                        <span onclick="toggleckeckShowLogin()">Se connecter</span>
+                    </div>
+                </div>
+
+                <input type="submit" value="Se connecter" id="loginBtn">
+                <input type="submit" value="S'enregister" id="signupbtn">
+            </form>
+        </div>
+
+        <div class="right-section">
+
+        </div>
+
+
+    </main>
+
+    <script>
+
+
+
+        //menu mobile Script
+        const menu = document.querySelector('.menu');
+        function showMenu() {
+            var btnMenu = document.getElementById("hamburger_menu");
+            menu.classList.toggle("menu_mobile");
+
+        }
+
+
+
+        // toggle login signUp form 
+        
+        const signUp = document.getElementById('signUp');
+        const login = document.getElementById('login');
+        const linkSignUp = document.getElementById('linkSignUp');
+
+        const signupbtn = document.getElementById('signupbtn');
+        const loginBtn = document.getElementById('loginBtn');
+
+        const formTitle = document.getElementById('formTitle');
+        
+
+        const linkLogin = document.getElementById('linkLogin');
+
+        linkSignUp.style.display = "none";
+        signUp.style.display = "none";
+        signupbtn.style.display = "none";
+
+        const toggleckeckShow = () => {
+
+            let y = "S'enregister";
+            signupbtn.style.display = "block";
+            login.style.display = "none";
+            loginBtn.style.display = "none";
+            signUp.style.display = "flex";
+            linkSignUp.style.display = "flex";
+            linkLogin.style.display = "none";
+            formTitle.innerText = y;
+
+
+        }
+
+        const toggleckeckShowLogin = () => {
+            let x = "Connexion";
+            login.style.display = "flex";
+            signUp.style.display = "none";
+            signupbtn.style.display = "none";
+            formTitle.innerText = "Connexion"
+            loginBtn.style.display = "block";
+            linkSignUp.style.display = "none";
+            linkLogin.style.display = "flex"
+            ckeckShow.checked == false;
+            formTitle.innerText = x;
+
+        }
+
+
+
+
+        // show/hide paswword scrip 
+        const tooglePasswordindicator = document.getElementById('tooglePasswordindicator');
+        const tooglePasswordindicatorSignUp = document.getElementById('tooglePasswordindicatorSignUp');
+        // const checkboxContainer = document.querySelector('.show-password')
+        var passWord = document.getElementById("password");
+        var PasswordSignUp = document.getElementById("PasswordSignUp");
+
+        function showPassword() {
+            if (passWord.type === "password") {
+                passWord.type = "text";
+                tooglePasswordindicator.innerText = "Masquer";
+            } else {
+                passWord.type = "password";
+                tooglePasswordindicator.innerText = "Voir";
+            }
+        }
+        function showPasswordSignUp() {
+            if (PasswordSignUp.type === "password") {
+                PasswordSignUp.type = "text";
+                tooglePasswordindicatorSignUp.innerText = "Masquer";
+            } else {
+                PasswordSignUp.type = "password";
+                tooglePasswordindicatorSignUp.innerText = "Voir";
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
