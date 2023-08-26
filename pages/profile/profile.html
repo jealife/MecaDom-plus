@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <style>
+        .nav-btn .mobile-btn{
+            display: none;
+        }
+        @media (max-width: 640px) { 
+            .nmenu .nav-btn{
+            display: none;
+        }
+         }
+    </style>
+    
 </head>
 
 <body class="p-1">
@@ -29,11 +41,14 @@
                     <a href="#" class="link-menu">Produits</a>
                     <a href="#" class="link-menu">Fovoris</a>
                 </div>
-
-                <div class="nav-btn">
-                    <a href="./pages/register/sgnin.html" class="login hidden">Se connecter</a>
-                    <a href="./pages/profile/profile.html" class="register ">Profile</a>
+                <div class="nav-btn  ">
+                    <a href="#" class="login hidden">Log out</a>
+                    <a href="./pages/profile/profile.html" class="register hidden">Profile</a>
                 </div>
+            </div>
+            <div class="nav-btn mobile-btn  ">
+                <a href="#" class="login hidden">Log out</a>
+                <a href="./pages/profile/profile.html" class="register hidden">Profile</a>
             </div>
         </nav>
     </header>
