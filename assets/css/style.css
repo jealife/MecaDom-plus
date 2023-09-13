@@ -25,7 +25,7 @@ nav {
 
   /* width: 100%; */
 }
-nav .logo img {
+nav .logo  img {
   width: 150px;
   z-index: 900000;
 }
