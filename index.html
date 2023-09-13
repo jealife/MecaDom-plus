@@ -64,59 +64,158 @@
     <main>
         <!-- <img class="Spanner" src="assets/images/Spanner Wrench.png" alt> -->
 
-        <section class="hero-section">
-            <div class="left-section">
-                <div class="left-section-container">
-                    <div class="top">
-                        <span> ne cherchez plus loin </span>
-                        <h1 class="hero-title">
-                            Trouvez un <span>Mécanicien</span>
-                            où que vous soyez
-                        </h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                            repellendus at ea consectetur esse optio reprehenderit modi,
-                            facilis tenetur aut. Inventore incidunt perferendis asperiores
-                            earum.
-                        </p>
-
-                        <div class="search-bar-container">
-                            <form class="search-home-form" action="" method="post">
-                                <input id="homeSearch" type="search" placeholder="Search your service..." required>
-                                <button type="submit">
-                                    <i class='bx bx-search-alt-2'></i>
-                                </button>
-                            </form>
+        <section class="hero-section w-full flex flex-col items-center justify-center">
+            <div class="w-full grid grid-cols-2 max-w-[1440px] relative my-2">
+                <div class="left-section">
+                    <div class="left-section-container">
+                        <div class="top">
+                            <span> ne cherchez plus loin </span>
+                            <h1 class="hero-title">
+                                Trouvez un <span>Mécanicien</span>
+                                où que vous soyez
+                            </h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                                repellendus at ea consectetur esse optio reprehenderit modi,
+                                facilis tenetur aut. Inventore incidunt perferendis asperiores
+                                earum.
+                            </p>
+    
+                            <div class="search-bar-container">
+                                <form class="search-home-form" action="" method="post">
+                                    <input id="homeSearch" type="search" placeholder="Search your service..." required>
+                                    <button type="submit">
+                                        <i class='bx bx-search-alt-2'></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="bottom"></div>
+                        <div class="msg-bottom">
+                            <div class="icon-bottom">
+                                <img src="assets/images/Hand Holding Wrench.png" alt="Hand 3d">
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestias!
+                            </p>
                         </div>
                     </div>
-                    <div class="bottom"></div>
-                    <div class="msg-bottom">
-                        <div class="icon-bottom">
-                            <img src="assets/images/Hand Holding Wrench.png" alt="Hand 3d">
-                        </div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestias!
-                        </p>
+                </div>
+    
+                <div class="right-section rounded-3xl"></div>
+    
+                <div class="services-block">
+                    <h2>
+                        Services
+                    </h2>
+                    <div class="services-container">
+                        <a href="#">Vidange</a>
+                        <a href="#">Lavage</a>
+                        <a href="#">Dépannage</a>
+                        <a href="#">Consultation globale</a>
+                        <a href="#">Climatisation</a>
+                        <a href="#">Batterie</a>
                     </div>
                 </div>
             </div>
-
-            <div class="right-section rounded-s-3xl"></div>
-
-            <div class="services-block">
-                <h2>
-                    Services
-                </h2>
-                <div class="services-container">
-                    <a href="#">Vidange</a>
-                    <a href="#">Lavage</a>
-                    <a href="#">Dépannage</a>
-                    <a href="#">Consultation globale</a>
-                    <a href="#">Climatisation</a>
-                    <a href="#">Batterie</a>
-                </div>
-            </div>
+            
         </section>
+
+        <section class='w-full flex flex-col gap-10 items-center justify-center py-28 px-10 min-h-max '>
+            <h1 class='title text-4xl tracking-tight font-extrabold'>Ils repondent à  vos Besoins</h1>
+            <div class="wrapper grid lg:grid-cols-3 gap-8 justify-center items-center mx-auto grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
+                <div class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl w-96 md:w-full ease-in duration-300 hover:translate-y-2" >
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/851" alt="card__image" class="card__image  rounded-t-xl w-96 object-cover h-52" width="600" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <Link href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=456" alt="user__image" class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </Link>
+                        <Link href='/' class="call text-slate-600 text-sm pr-2">
+                            <box-icon type='solid' name='phone'></box-icon>
+                        </Link>
+        
+                    </div>
+                </div>
+                <div class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl w-80 md:w-full ease-in duration-300 hover:translate-y-2" >
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/852" alt="card__image" class="card__image  rounded-t-xl w-96 object-cover h-52" width="600" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <Link href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=458" alt="user__image" class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </Link>
+                        <Link href='/' class="call text-slate-600 text-sm pr-2">
+                            <box-icon type='solid' name='phone'></box-icon>
+                        </Link>
+        
+                    </div>
+                </div>
+                <div class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl w-80 md:w-full ease-in duration-300 hover:translate-y-2" >
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/855" alt="card__image" class="card__image  rounded-t-xl w-96 object-cover h-52" width="600" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <Link href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=456" alt="user__image" class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </Link>
+                        <Link href='/' class="call text-slate-600 text-sm pr-2">
+                            <box-icon type='solid' name='phone'></box-icon>
+                        </Link>
+        
+                    </div>
+                </div>
+            </div>
+          </section>
     </main>
 
     <script src="assets/js/nav.js"></script>
