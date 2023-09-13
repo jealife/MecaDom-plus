@@ -131,8 +131,6 @@ nav .menu .link-menu:hover {
   height: 100%;
   flex: 1;
   width: 100%;
-  /* min-height: 100vh;
-  min-height: 100dvh; */
 }
 
 .right-section {
@@ -162,8 +160,6 @@ nav .menu .link-menu:hover {
   gap: 25px;
 }
 .top {
-  margin-top: 2rem;
-  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -305,7 +301,9 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: var(--primary);
     color: var(--bg-color);
 }
-
+.wrapper{
+  justify-content: center;
+}
 /*Responsives*/
 @media (max-width: 768px) {
   header {
@@ -389,9 +387,8 @@ input[type="search"]::-webkit-search-cancel-button {
   }
 
   .hero-section {
-    flex-direction: column;
     padding: 0.51rem;
-    min-height: max-content;
+    min-height: 100vh;
   }
   .left-section {
     background-position: left;
@@ -417,9 +414,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
   .services-block {
     /* margin-top: 1rem; */
-    top: 0;
+    top: 100%;
     left: 0;
-    transform: translate(0%, 0%);
+    transform: translate(0%, 50%);
     position: relative;
     width: 100%;
   }
