@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
@@ -55,7 +55,7 @@
     </header>
     <main>
         <div class="carousel w-full flex flex-col items-center justify-center lg:mt-24 mt-[91px] lg:px-24">
-            <div class="content max-w-screen-xl ">
+            <div class="w-full    max-w-[1440px] relative mb-4">
 
                 <div id="carouselDarkVariant" class="relative " data-te-carousel-init data-te-ride="carousel">
                     <!-- Carousel indicators -->
@@ -73,13 +73,15 @@
                     </div>
 
                     <!-- Carousel items -->
-                    <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] lg:rounded-3xl">
+                    <div
+                        class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] lg:rounded-3xl lg:h-[400px]">
                         <!-- First item -->
                         <div class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
                             data-te-carousel-fade data-te-carousel-item data-te-carousel-active>
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp" class="block w-full"
                                 alt="Motorbike Smoke" />
-                            <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
+                            <div
+                                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
                                 <h5 class="text-xl">First slide label</h5>
                                 <p>
                                     Some representative placeholder content for the first slide.
@@ -91,7 +93,8 @@
                             data-te-carousel-fade data-te-carousel-item>
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp" class="block w-full"
                                 alt="Mountaintop" />
-                            <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
+                            <div
+                                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
                                 <h5 class="text-xl">Second slide label</h5>
                                 <p>
                                     Some representative placeholder content for the second slide.
@@ -103,7 +106,8 @@
                             data-te-carousel-fade data-te-carousel-item>
                             <img src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp" class="block w-full"
                                 alt="Woman Reading a Book" />
-                            <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
+                            <div
+                                class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block backdrop-blur-xl bg-white/30 rounded-xl">
                                 <h5 class="text-xl">Third slide label</h5>
                                 <p>
                                     Some representative placeholder content for the third slide.
@@ -140,6 +144,31 @@
                     </button>
                 </div>
             </div>
+        </div>
+
+        <div class="search-form px-24 ">
+
+            <div class="w-full  max-w-[1440px] relative mb-4 ">
+                <form>
+                    <div class="flex items-center justify-center">
+                        <div class="relative w-96 ">
+                            <input type="search" id="search-dropdown" style="border-radius: 12px; padding: 1rem ;"
+                                class="block p-2.5 py-5 w-full z-20 text-sm text-gray-900 bg-gray-50  border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                                placeholder="Search Mockups, Logos, Design Templates..." required>
+                            <button type="submit"
+                                class="absolute top-0 right-0  text-sm font-medium h-full text-white bg-blue-700 rounded-md px-5  border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="sr-only">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
 
     </main>
