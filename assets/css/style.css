@@ -193,18 +193,18 @@ nav .menu .link-menu:hover {
   border-radius: 5em;
 }
 
-input[type="search"] {
+.search-bar-container form input[type="search"] {
   padding: 0.9rem 3rem 0.9rem 0.8rem;
   border-radius: 5em;
   font-size: 0.95rem;
   transition: all ease-in-out 0.3s;
   /* outline: 2px solid #a6b4c8; */
-  background-color: #c7c8cab7;
+  background-color: #d1d1d1a4;
 }
 
 input[type="search"]:focus {
   outline: 1px solid var(--vibrant);
-  background-color: var(--bg-color);
+  background-color: #ffffff;
   /* box-shadow: #a6b4c8 10px 10px 24px , #ffffff -12px -12px 20px; */
   box-shadow: #c7c8cab7 10px 10px 15px, #eeeeeeda -12px -12px 15px;
   -webkit-box-shadow: 15px 15px 15px #c7c8caa4, -15px -15px 15px #eeeeeeda;
