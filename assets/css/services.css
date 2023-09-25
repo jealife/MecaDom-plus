@@ -18,9 +18,3 @@
 .filter::-webkit-scrollbar {
   visibility: hidden;
 }
-
-.filter {
-  cursor: grab;
-  overflow: auto;
-
-}

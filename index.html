@@ -32,6 +32,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -69,8 +71,10 @@
                 <div class="left-section">
                     <div class="left-section-container">
                         <div class="top">
-                            <span> ne cherchez plus loin </span>
-                            <h1 class="hero-title">
+                            <span data-aos="fade-up" data-aos-duration="800">
+                                ne cherchez plus loin
+                            </span>
+                            <h1 class="hero-title" ata-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                                 Trouvez un <span>Mécanicien</span>
                                 où que vous soyez
                             </h1>
@@ -82,8 +86,9 @@
                             </p>
 
                             <div class="search-bar-container">
-                                <form class="search-home-form w-full" action="" method="post" >
-                                    <input id="homeSearch" class="w-full" type="search" placeholder="Search your service..." required>
+                                <form class="search-home-form w-full" action="" method="post">
+                                    <input id="homeSearch" class="w-full" type="search"
+                                        placeholder="Search your service..." required>
                                     <button type="submit">
                                         <i class='bx bx-search-alt-2'></i>
                                     </button>
@@ -102,9 +107,10 @@
                     </div>
                 </div>
 
-                <div class="right-section rounded-3xl py-24"></div>
+                <div class="right-section rounded-3xl py-24" data-aos="fade-up" data-aos-duration="800">
+                </div>
 
-                <div class="services-block lg:block md:-mt-12 -mt-14 mb-12">
+                <div class="services-block lg:block md:-mt-12 -mt-14 mb-12" data-aos="flip-left" data-aos-duration="800" data-aos-delay="300">
                     <h2 class="font-bold text-2xl text-center pb-2">
                         Services
                     </h2>
@@ -593,9 +599,14 @@
             </div>
         </div>
     </footer>
-    
+
 
     <script src="assets/js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

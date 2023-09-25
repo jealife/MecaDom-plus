@@ -19,6 +19,7 @@ function myapp() {
       const currentCategory = button.dataset.filter;
       console.log(currentCategory);
       filter(currentCategory, cards);
+      this.style.backGround='red'
     });
   });
 }
