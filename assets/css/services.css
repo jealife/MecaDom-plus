@@ -14,3 +14,6 @@
   box-shadow: #c7c8cab7 10px 10px 15px;
   -webkit-box-shadow: 15px 15px 15px #c7c8caa4, ;
 }
+.filter::-webkit-scrollbar{
+  visibility:hidden;
+}
