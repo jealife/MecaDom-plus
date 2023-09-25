@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -176,13 +177,14 @@
         <div class="w-full flex flex-col items-center justify-center px-4  mt-4">
             <div class="content-filter w-full  max-w-[1440px] relative mb-4">
                 <div class="flex lg:items-center wrap justify-center w-full gap-5">
-                    <select data-te-select-init>
+                    <!-- <select data-te-select-init>
                         <option value="1">Tout</option>
                         <option value="2">Lavage</option>
                         <option value="3">Maintenance</option>
                         <option value="4">Batterie</option>
                         <option value="5">Pneumatique</option>
-                    </select>
+                    </select> -->
+                    <Label>Lieu</Label>
                     <select data-te-select-init class="rounded-full">
                         <option value="1">Casabalanca</option>
                         <option value="2">Tanger</option>
@@ -199,6 +201,36 @@
 
             </div>
         </div>
+        <div class="categoties  w-full flex flex-col items-center justify-center px-4  mt-4 ">
+
+            <div class="filter content-filter w-full  max-w-[1440px] relative mb-4 flex gap-3 overflow-x-auto">
+                <button
+                    class="button button_all border-solid border-2 border-indigo-600 py-1 px-3 rounded-full hover:bg-blue-500 hover:text-white"
+                    data-filter="all">
+                    Tout
+                </button>
+                <button
+                    class="button button_clothing border-solid border-2 border-indigo-600 py-1 px-3 rounded-full hover:bg-blue-500 hover:text-white"
+                    data-filter="Dépannage">
+                    Dépannage
+                </button>
+                <button
+                    class="button button_decor border-solid border-2 border-indigo-600 py-1 px-3 rounded-full hover:bg-blue-500 hover:text-white"
+                    data-filter="Maintenance">
+                    Maintenance
+                </button>
+                <button
+                    class="button button_bags border-solid border-2 border-indigo-600 py-1 px-3 rounded-full hover:bg-blue-500 hover:text-white"
+                    data-filter="Pneumatique">
+                    Pneumatique
+                </button>
+                <button
+                    class="button button_bags border-solid border-2 border-indigo-600 py-1 px-3 rounded-full hover:bg-blue-500 hover:text-white"
+                    data-filter="Lavage">
+                    Lavage
+                </button>
+            </div>
+        </div>
 
 
         <!-- cards service -->
@@ -208,8 +240,8 @@
             <div
                 class="wrapper grid lg:grid-cols-3 gap-8 justify-items-center items-center mx-auto grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
 
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                <div data-aos="fade-up"
+                    class="card Dépannage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/851" alt="card__image"
                             class="card__image  rounded-t-xl w-96 object-cover h-52" width="600" />
@@ -241,14 +273,14 @@
 
                     </div>
                 </div>
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                <div data-aos="fade-up"
+                    class="card Maintenance card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/856" alt="card__image"
                             class="card__image  rounded-t-xl w-96 object-cover h-52" width="600" />
                     </div>
                     <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                        <h2 class="text-slate-950 font-extrabold">Maintenance</h2>
                     </div>
                     <div class="service px-4">
                         <span class="call text-slate-900 text-sm">Vidange - </span>
@@ -274,14 +306,14 @@
 
                     </div>
                 </div>
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                <div data-aos="fade-up"
+                    class="card Pneumatique card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/888" alt="card__image"
                             class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
                     </div>
                     <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                        <h2 class="text-slate-950 font-extrabold">Pneumatique</h2>
                     </div>
                     <div class="service px-4">
                         <span class="call text-slate-900 text-sm">Vidange - </span>
@@ -308,14 +340,14 @@
                     </div>
                 </div>
 
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                <div data-aos="fade-up"
+                    class="card Lavage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/852" alt="card__image"
                             class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
                     </div>
                     <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                        <h2 class="text-slate-950 font-extrabold">Lavage</h2>
                     </div>
                     <div class="service px-4">
                         <span class="call text-slate-900 text-sm">Vidange - </span>
@@ -342,8 +374,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                <div data-aos="fade-up"
+                    class="card Dépannage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/854" alt="card__image"
                             class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
@@ -375,9 +407,41 @@
 
                     </div>
                 </div>
+                <div data-aos="fade-up"
+                    class="card Dépannage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/856" alt="card__image"
+                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <a href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
+                                    class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </a>
+                        <a href='/' class="call text-slate-600 text-sm pr-2">
+                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
+                        </a>
 
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    </div>
+                </div>
+                <div data-aos="fade-up"
+                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
                     <div class="card-cover">
                         <img src="https://unsplash.it/859" alt="card__image"
                             class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
@@ -409,107 +473,8 @@
 
                     </div>
                 </div>
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/850" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
 
-                    </div>
-                </div>
 
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/872" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
-
-                    </div>
-                </div>
-
-                <div
-                    class="card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/892" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="600" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
-
-                    </div>
-                </div>
 
             </div>
         </section>
@@ -543,7 +508,7 @@
                         d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
                         fill="#1C64F2"></path>
                 </svg>
-                Loading...
+                Chargement ...
             </button>
         </section>
 
@@ -566,8 +531,14 @@
         initTE({ Select });
     </script>
     <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/filter.js"></script>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
