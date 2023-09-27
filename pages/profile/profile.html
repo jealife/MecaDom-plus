@@ -122,7 +122,7 @@
                                     <a href="#tabs-messages03"
                                         class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
                                         data-te-toggle="pill" data-te-target="#tabs-messages03" role="tab"
-                                        aria-controls="tabs-messages03" aria-selected="false">Messages</a>
+                                        aria-controls="tabs-messages03" aria-selected="false">Edit</a>
                                 </li>
                                 <li role="presentation" class="flex-grow text-center hidden">
                                     <a href="#tabs-contact03"
@@ -171,11 +171,54 @@
                             </div>
                             <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                 id="tabs-messages03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
-                                Tab 3 content
+                                <div class="title text-left">
+                                    <h2 class="font-semibold py-5">Edit Profile</h2>
+                                </div>
+                                <div
+                                    class="profile-container flex gap-3 justify-center flex-wrap  mt-4 lg:flex-row flex-col ">
+                                    <div
+                                        class="personal-infos flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52">
+                                        <h3 class="font-bold mb-2 ">
+                                            Informations personnelles
+                                        </h3>
+                                        <div class="relative mb-3" data-te-input-wrapper-init>
+                                            <input
+                                              type="text"
+                                              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                              id="name"
+                                              placeholder="User name" />
+                                            <label
+                                              for="exampleFormControlInputText"
+                                              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                              >nom d'utilisateur
+                                            </label>
+                                          </div>
+                                          <div class="relative mb-3" data-te-input-wrapper-init>
+                                            <input
+                                              type="email"
+                                              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                                              id="email"
+                                              placeholder="Email" />
+                                            <label
+                                              for="exampleFormControlInputEmail"
+                                              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                                              >Email
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <div
+                                        class="adress flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52">
+                                        <h3 class="font-bold mb-2 ">Carnet d'adress</h3>
+                                        <p class="text-gray-400">Maroc</p>
+                                        <p class="text-gray-400">Casabalanca</p>
+                                        <p class="text-gray-400">4247 Ashford Drive Virginia - VA-20006 - USA
+                                            (+0) 900901904</p>
+                                    </div>
+                                </div>
                             </div>
                             <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                 id="tabs-contact03" role="tabpanel" aria-labelledby="tabs-contact-tab03">
-                                Tab 4 content
+
                             </div>
                         </div>
                     </div>
@@ -254,7 +297,8 @@
                         </svg>
                         <span class="sr-only">Discord community</span>
                     </a>
-                    <a href="pages/profile/profile.html" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <a href="pages/profile/profile.html"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 17">
                             <path fill-rule="evenodd"
@@ -290,11 +334,12 @@
     <script>
         // Initialization for ES Users
         import {
-            Tab,
+            Tab, Input,
             initTE,
         } from "tw-elements";
 
         initTE({ Tab });
+        initTE({ Input });
     </script>
 </body>
 
