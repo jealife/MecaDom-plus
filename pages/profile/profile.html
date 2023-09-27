@@ -44,11 +44,42 @@
 <body class="p-1">
 
 
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="../../assets/images/Logotype_Mecadom.png" alt=" Logo MECADOM" />
+            </a>
+            <a href="#Search"
+                class="lg:hidden h-8 text-white bg-blue-700 rounded-md px-4  border border-blue-700 hover:bg-blue-800 grid items-center">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 20 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                </svg>
+                <span class="sr-only">Rechercher</span>
+            </a>
+            <button onclick="showMenu()" id="hamburger_menu" class="button_menu">
+                <i id="bxBtnmenu" class="bx bx-menu"></i>
+                <i id="bxBtnx" style="display: none" class="bx bx-x"></i>
+            </button>
+            <div class="menu">
+                <div class="links-menu">
+                    <a href="/" class="link-menu">Accueil</a>
+                    <a href=" " class="link-menu">Services</a>
+                    <a href="#" class="link-menu">Produits</a>
+                </div>
 
+                <div class="nav-btn">
+                    <a href="/pages/register/sgnin.html" class="login">Se connecter</a>
+                    <a href="./pages/profile/profile.html" class="register hidden">Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
 
         <div
-            class="overflow-hidden  border border-stroke pt-6 rounded-3xl  rounded-b-3xl  shadow-default dark:border-strokedark dark:bg-boxdark max-w-5xl my-24 md:my-14 mx-auto">
+            class="overflow-hidden  border border-stroke pt-6  rounded-3xl  rounded-b-3xl  shadow-default dark:border-strokedark dark:bg-boxdark max-w-5xl mt-24 mx-auto">
 
             <div class="px-4 text-center  pb-10">
 
@@ -74,12 +105,13 @@
                                 </div>
 
                             </div>
-                            <div class="navigation lg:shadow-none bg-white shadow-md flex list-none w-full lg:w-auto py-3  lg:flex-col  flex-row flex-wrap rounded-2xl  lg:px-10 px-2 items-center">
+                            <div
+                                class="navigation lg:shadow-none bg-white shadow-md flex list-none w-full lg:w-auto py-3  lg:flex-col  flex-row flex-wrap rounded-2xl  lg:px-10 px-2 items-center">
                                 <li role="presentation" class="flex-grow text-center">
                                     <a href="#tabs-home03"
                                         class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-                                        data-te-toggle="pill" data-te-target="#tabs-home03" data-te-nav-active role="tab"
-                                        aria-controls="tabs-home03" aria-selected="true">Profile</a>
+                                        data-te-toggle="pill" data-te-target="#tabs-home03" data-te-nav-active
+                                        role="tab" aria-controls="tabs-home03" aria-selected="true">Profile</a>
                                 </li>
                                 <li role="presentation" class="flex-grow text-center">
                                     <a href="#tabs-profile03"
@@ -107,23 +139,26 @@
                             <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block  "
                                 id="tabs-home03" role="tabpanel" aria-labelledby="tabs-home-tab03" data-te-tab-active>
                                 <div class="title">
-                                    <h2 class="font-semibold py-5">Profile</h2>
+                                    <h2 class="font-semibold py-5">Votre Profile</h2>
                                     <p>From your My Account Dashboard you have the ability to view a snapshot of your
                                         recent account activity and update your account information. Select a link below
                                         to view or edit information.
                                     </p>
                                 </div>
-                                <div class="profile-container flex gap-3 justify-center flex-wrap  mt-4 lg:flex-row flex-col ">
-                                    <div class="personal-infos flex-1 p-2 bg-white rounded-2xl flex-1 border border-stroke h-52">
+                                <div
+                                    class="profile-container flex gap-3 justify-center flex-wrap  mt-4 lg:flex-row flex-col ">
+                                    <div
+                                        class="personal-infos flex-1 p-2 bg-white rounded-2xl flex-1 border border-stroke h-52">
                                         <h3 class="font-bold  ">
                                             Informations personnelles
                                         </h3>
                                     </div>
-                                    <div class="adress flex-1 p-2 bg-white rounded-2xl flex-1 border border-stroke h-52">
+                                    <div
+                                        class="adress flex-1 p-2 bg-white rounded-2xl flex-1 border border-stroke h-52">
                                         <h3 class="font-bold  ">Adress</h3>
                                     </div>
                                 </div>
-                               
+
                             </div>
                             <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                 id="tabs-profile03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
