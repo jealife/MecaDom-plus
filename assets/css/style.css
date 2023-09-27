@@ -263,7 +263,7 @@ input[type="search"]::-webkit-search-cancel-button {
   height: max-content;
   position: absolute;
   z-index: 12;
-  top: 55%;
+  top: 50%;
   left: 59%;
   transform: translate(-50%, -50%);
   bottom: -2px;
