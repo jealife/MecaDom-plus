@@ -26,21 +26,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                fontFamily: {
-                    sans: ["Roboto", "sans-serif"],
-                    body: ["Roboto", "sans-serif"],
-                    mono: ["ui-monospace", "monospace"],
-                },
-            },
-            corePlugins: {
-                preflight: false,
-            },
-        };
-    </script>
+   
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <link rel="icon" type="image/png" href="../../assets/images/Logo_icon.png" />
 </head>
@@ -48,26 +34,20 @@
 <body>
     <header>
         <nav>
+           
             <a href="/" class="logo">
                 <img src="../../assets/images/Logotype_Mecadom.png" alt=" Logo MECADOM" />
             </a>
-            <a href="#Search"
-                class="lg:hidden h-8 text-white bg-blue-700 rounded-md px-4  border border-blue-700 hover:bg-blue-800 grid items-center">
-                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                </svg>
-                <span class="sr-only">Rechercher</span>
-            </a>
+            
             <button onclick="showMenu()" id="hamburger_menu" class="button_menu">
                 <i id="bxBtnmenu" class="bx bx-menu"></i>
                 <i id="bxBtnx" style="display: none" class="bx bx-x"></i>
             </button>
 
+            
 
-            <!-- Dropdown profile -->
-            <div x-data="{ open: false }" class="rounded-full order-2  dark:bg-gray-800 shadow flex justify-center items-center">
+             <!-- Dropdown profile -->
+             <div x-data="{ open: false }" class="rounded-full lg:order-last order-none dark:bg-gray-800 shadow flex justify-center items-center">
                 <div @click="open = !open" class="relative" :class="{'transform transition duration-300 ': open}"
                     x-transition:enter-end="transform opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-75"
@@ -123,6 +103,7 @@
                 </div>
             </div>
             <div class="menu">
+                
                 <div class="links-menu">
                     <a href="" class="link-menu">Services</a>
                     <a href="#" class="link-menu">Produits</a>

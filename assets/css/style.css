@@ -336,8 +336,7 @@ input[type="search"]::-webkit-search-cancel-button {
     flex-direction: column;
   }
   .logo img {
-    top: 25%;
-    position: absolute;
+    top: 30%;
     z-index: 10000;
   }
   .links-menu {
@@ -359,7 +358,6 @@ input[type="search"]::-webkit-search-cancel-button {
     gap: 1.5rem;
     height: 100%;
     width: 0;
-    position: fixed;
     z-index: 1;
     left: 0;
     display: flex;
