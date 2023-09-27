@@ -18,6 +18,8 @@
     <meta property="og:image" content="https://meca-dom-plus.vercel.app/assets/images/Logo_Mecadom.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/general.css">
@@ -26,28 +28,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
     <script src="https://cdn.tailwindcss.com/3.3.0"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
     <link rel="icon" type="image/png" href="../../assets/images/Logo_icon.png" />
 </head>
 
 <body>
     <header>
         <nav>
-           
+
             <a href="/" class="logo">
                 <img src="../../assets/images/Logotype_Mecadom.png" alt=" Logo MECADOM" />
             </a>
-            
+
             <button onclick="showMenu()" id="hamburger_menu" class="button_menu">
                 <i id="bxBtnmenu" class="bx bx-menu"></i>
                 <i id="bxBtnx" style="display: none" class="bx bx-x"></i>
             </button>
 
-            
 
-             <!-- Dropdown profile -->
-             <div x-data="{ open: false }" class="rounded-full lg:order-last order-none dark:bg-gray-800 shadow flex justify-center items-center">
+
+            <!-- Dropdown profile -->
+            <div x-data="{ open: false }"
+                class="rounded-full lg:order-last order-none dark:bg-gray-800 shadow flex justify-center items-center">
                 <div @click="open = !open" class="relative" :class="{'transform transition duration-300 ': open}"
                     x-transition:enter-end="transform opacity-100 scale-100"
                     x-transition:leave="transition ease-in duration-75"
@@ -84,13 +86,21 @@
                                 </a>
                             </li>
                             <li class="font-medium">
-                                <a href="#" class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
-                                  <div class="mr-3">
-                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                  </div>
-                                  Boutique
+                                <a href="#"
+                                    class="flex items-center transform transition-colors duration-200 border-r-4 border-transparent hover:border-indigo-700">
+                                    <div class="mr-3">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z">
+                                            </path>
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                        </svg>
+                                    </div>
+                                    Boutique
                                 </a>
-                              </li>
+                            </li>
                             <hr class="dark:border-gray-700">
                             <li class="font-medium">
                                 <a href="#"
@@ -106,7 +116,7 @@
                                     Se déconnecter
                                 </a>
                             </li>
-                           
+
                         </ul>
                     </div>
                 </div>
@@ -550,6 +560,148 @@
 
                     </div>
                 </div>
+                <div
+                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/859" alt="card__image"
+                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <a href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
+                                    class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </a>
+                        <a href='/' class="call text-slate-600 text-sm pr-2">
+                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div
+                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/859" alt="card__image"
+                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <a href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
+                                    class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </a>
+                        <a href='/' class="call text-slate-600 text-sm pr-2">
+                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <!-- component -->
+                <div class="bg-cover bg-center rounded-2xl   text-white py-20 px-9 object-fill"
+                    style="background-image: url(https://plus.unsplash.com/premium_photo-1661954236764-6c567b653d49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)">
+                    <div class="w-1/2 bg-blend-lighten bg-blend-darken">
+                        <p class="font-bold text-sm text-white uppercase">Services</p>
+                        <p class="text-3xl font-bold text-white">Garage Maarif</p>
+                        <p class="text-2xl mb-10 leading-none text-gray-200">Équipe spécialisée pour vous</p>
+                        <a href="#"
+                            class="bg-red-700 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">
+                            Contact us</a>
+                    </div>
+                </div>
+                <div
+                    class="card Lavage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/839" alt="card__image"
+                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Lavage</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <a href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
+                                    class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </a>
+                        <a href='/' class="call text-slate-600 text-sm pr-2">
+                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div
+                    class="card Lavage card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
+                    <div class="card-cover">
+                        <img src="https://unsplash.it/852" alt="card__image"
+                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
+                    </div>
+                    <div class="title-service w-full text-center flex text-xl px-4">
+                        <h2 class="text-slate-950 font-extrabold">Lavage</h2>
+                    </div>
+                    <div class="service px-4">
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm">Vidange - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                        <span class="call text-slate-900 text-sm"> Lavage - </span>
+                    </div>
+                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
+                        <a href='/' class="user flex gap-2">
+                            <div class="profile-pic">
+                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
+                                    class="user__image rounded-full " />
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
+                                <span class="text-slate-600 text-sm"> Mécanicienne </span>
+                            </div>
+                        </a>
+                        <a href='/' class="call text-slate-600 text-sm pr-2">
+                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
+                        </a>
+
+                    </div>
+                </div>
 
 
 
@@ -607,53 +759,7 @@
 
         initTE({ Select });
     </script>
-    <script>
 
-        // set the dropdown menu element
-        const $targetEl = document.getElementById('dropdownMenu');
-
-        // set the element that trigger the dropdown menu on click
-        const $triggerEl = document.getElementById('dropdownButton');
-
-        // options with default values
-        const options = {
-            placement: 'bottom',
-            triggerType: 'click',
-            offsetSkidding: 0,
-            offsetDistance: 10,
-            delay: 300,
-            ignoreClickOutsideClass: false,
-            onHide: () => {
-                console.log('dropdown has been hidden');
-            },
-            onShow: () => {
-                console.log('dropdown has been shown');
-            },
-            onToggle: () => {
-                console.log('dropdown has been toggled');
-            }
-        };
-        import { Dropdown } from 'flowbite';
-
-        /*
-        * $targetEl: required
-        * $triggerEl: required
-        * options: optional
-        */
-        const dropdown = new Dropdown($targetEl, $triggerEl, options);
-        // show the dropdown menu
-        dropdown.show();
-
-        // hide the dropdown menu
-        dropdown.hide();
-
-        // toggle the dropdown menu
-        dropdown.toggle();
-
-        // check if dropdown is visible/open
-        dropdown.isVisible();
-
-    </script>
     <script src="/assets/js/nav.js"></script>
     <script src="/assets/js/filter.js"></script>
 
