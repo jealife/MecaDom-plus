@@ -20,24 +20,15 @@ nav {
   justify-content: space-between;
   gap: 5px;
 }
-.logo {
-  flex: 1;
 
-  /* width: 100%; */
-}
 nav .logo  img {
-  width: 150px;
   z-index: 900000;
 }
 
-.div img {
-  display: none;
-  width: 90px;
-}
 
-nav img,
+
 nav .button_menu {
-  z-index: 100000;
+  z-index: 9999;
 }
 
 nav .button_menu {
@@ -47,7 +38,7 @@ nav .button_menu {
   border: none;
   background-color: transparent;
 }
-
+/*  */
 a {
   text-decoration: none;
   color: #0e141a;
