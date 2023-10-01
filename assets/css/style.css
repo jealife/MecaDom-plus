@@ -45,11 +45,13 @@ a {
 }
 
 .menu {
+  gap: 1rem;
   flex: 1;
   display: flex;
   width: 100%;
-  justify-content: space-around;
   padding-left: 2rem;
+  align-content: center;
+  justify-content: flex-end;
 }
 
 .links-menu {
