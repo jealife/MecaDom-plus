@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8" />
     <meta property="og:title" content="MACADOM | Marketplace of car mechanics for Home Maintenance services" />
@@ -29,7 +30,67 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="icon" type="image/png" href="../../assets/images/Logo_icon.png" />
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .mask1 {
+            -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(black, transparent);
+        }
+
+        .hero-image {
+            background-image: url(../../assets/images/mecanicien-entretien-voiture.jpg);
+            background-image: url(../../assets/images/mecanicien-entretien-voiture.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        ::selection {
+            color: #fff;
+            /* background: #C026D3; */
+            background: #2563EB;
+        }
+
+        .mobile a {
+            transition: .3s;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 991.98px) {
+
+            .mob {
+                display: none;
+            }
+
+            .mobile {
+                transition: .3s;
+                /* position: absolute; */
+                right: 0;
+                top: 100%;
+                min-height: 100vh;
+                min-height: 100dvh;
+                width: 100vw;
+                padding: 2rem;
+                backdrop-filter: blur(50px);
+                -webkit-backdrop-filter: blur(50px);
+                /* background-color: #f1f1f1e0; */
+                font-size: 1.3rem;
+                display: flex;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -130,5 +191,71 @@
             </div> -->
         </nav>
     </header>
+    <main>
+        <section class="hero-section relative flex flex-col items-center lg:px-8 lg:pb-96 ">
+            <div class="hero-content w-full relative  ">
+                <div
+                    class="hero-image mask1 absolute lg:top-8 top-0 right-0  h-[700px]  w-full lg:rounded-3xl rounded-none flex  items-center ">
+                </div>
+                <div
+                    class="content h-max mt-24  w-full  flex flex-col gap-6 items-center px-5 py-24 text-center justify-center   relative -">
+                    <h1 class="lg:text-8xl text-5xl font-bold lg:text-gray-700 text-slate-700 " data-aos="fade-up"
+                        data-aos-duration="800"> <span class="text-white">Meca</span><span class="text-[#ffc107]">Shop</span> </h1>
+                    <p class="text-slate-100" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        Bientôt Disponible
+                    </p>
+                    <div class="search sticky">
+                        <div class="search-strock p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl"
+                            data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            <input disabled
+                                class="p-3 rounded-xl lg:w-96 w-64 focus:outline-2 focus:outline-pink-200 outline-offset-2 "
+                                type="search" name="search" id="search" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="blocks flex items-center justify-center relative mt-5 lg:mt-8 px-2">
+                    <div class="block-items grid grid-cols-3 gap-4 lg:gap-8">
+                        <div class="block p-1 lg:p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl "
+                            data-aos="zoom-out-up" data-aos-delay="100" data-aos-duration="800">
+                            <img class="w-full h-24  lg:w-[300px] lg:h-[300px]  object-cover  rounded-xl"
+                                src="../../assets/images/mecanicien-entretien-voiture.jpg" alt="">
+
+                        </div>
+                        <div class="block p-1 lg:p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl "
+                            data-aos="zoom-out-up" data-aos-delay="300" data-aos-duration="800">
+                            <img class="w-full h-24 lg:w-[300px] lg:h-[300px]  object-cover  rounded-xl"
+                                src="../../assets/images/mecanicien-afro-americain-reparant-moteur-voiture-dans-atelier.jpg"
+                                alt="">
+
+                        </div>
+
+                        <div class="block p-1 lg:p-2 backdrop-blur-xl bg-white/30 rounded-xl shadow-xl "
+                            data-aos="zoom-out-up" data-aos-delay="400" data-aos-duration="800">
+                            <img class=" lg:w-[300px] lg:h-[300px] w-full h-24 object-cover  rounded-xl"
+                                src="../../assets/images/mecanicien-entretien-voiture.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const mob = document.getElementById('mob');
+
+        function openMenu() {
+            mob.classList.toggle("mobile");
+        }
+    </script>
 </body>
+
 </html>
