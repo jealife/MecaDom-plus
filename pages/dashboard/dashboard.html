@@ -72,40 +72,42 @@
                     <!--Tabs navigation-->
                     <div class="tab flex  flex-wrap gap-5">
 
-                        <ul class=" sticky flex list-none w-full h-max lg:w-auto py-3  lg:flex-col  flex-row flex-wrap rounded-2xl lg:bg-white  lg:shadow-md lg:px-10 px-2 items-center"
+                        <ul class=" bg-blue-700 sticky flex list-none w-full h-max lg:w-auto py-3  lg:flex-col  flex-row flex-wrap rounded-2xl lg:bg-white  lg:shadow-md lg:px-10 px-2 items-center"
                             role="tablist" data-te-nav-ref>
                             <div class="mx-auto  p-1 flex justify-center items-center text-center ">
                                 <div class="drop-shadow-2 flex flex-col items-center  gap-3">
+                                    <!-- ========== user Profile picture ============== -->
+
                                     <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
                                         class="w-32 rounded-full shadow-lg dark:shadow-black/30" />
+
                                     <!-- ========== user name ============== -->
                                     <div class="name">
-                                        <h3 class=" text-2xl font-semibold text-black ">
-                                            Salut,
-                                            User
+                                        <h3 class=" text-2xl font-semibold text-white">
+                                            User Name
                                         </h3>
-                                        <p class="font-medium text-slate-400">Mechanic</p>
+                                        <p class="font-medium text-slate-400">Role</p>
                                     </div>
                                 </div>
 
                             </div>
-                            <div
-                                class="navigation lg:shadow-none bg-white shadow-md flex list-none w-full lg:w-auto py-3  lg:flex-col  flex-row flex-wrap rounded-2xl  lg:px-10 px-2 items-center">
+                            <div class="navigation lg:shadow-none bg-white shadow-md flex list-none w-full lg:w-auto py-3  lg:flex-col  
+                                flex-row flex-wrap rounded-2xl  lg:px-10 px-2 items-center sticky top-5 " >
                                 <li role="presentation" class="flex-grow text-center">
                                     <a href="#tabs-home03"
-                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-5 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
                                         data-te-toggle="pill" data-te-target="#tabs-home03" data-te-nav-active
                                         role="tab" aria-controls="tabs-home03" aria-selected="true">Profile</a>
                                 </li>
                                 <li role="presentation" class="flex-grow text-center">
                                     <a href="#tabs-profile03"
-                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-5 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
                                         data-te-toggle="pill" data-te-target="#tabs-profile03" role="tab"
-                                        aria-controls="tabs-profile03" aria-selected="false">Fovoris</a>
+                                        aria-controls="tabs-profile03" aria-selected="false">Services</a>
                                 </li>
                                 <li role="presentation" class="flex-grow text-center">
                                     <a href="#tabs-messages03"
-                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
+                                        class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-5 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
                                         data-te-toggle="pill" data-te-target="#tabs-messages03" role="tab"
                                         aria-controls="tabs-messages03" aria-selected="false">Edit</a>
                                 </li>
@@ -120,13 +122,16 @@
 
                         <!--Tabs content-->
                         <div class="content-dashboard flex-1 flex flex-col gap-3 ">
-                            <div class=" p-5 bg-white rounded-2xl shadow-md">
+                            <div class=" p-5 bg-white rounded-2xl shadow-md bg-local h-auto ">
                                 <div class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block  "
-                                    id="tabs-home03" role="tabpanel" aria-labelledby="tabs-home-tab03" data-te-tab-active>
+                                    id="tabs-home03" role="tabpanel" aria-labelledby="tabs-home-tab03"
+                                    data-te-tab-active>
                                     <div class="title text-left">
                                         <h2 class="font-semibold py-5">Votre Profile</h2>
-                                        <p>From your My Account Dashboard you have the ability to view a snapshot of your
-                                            recent account activity and update your account information. Select a link below
+                                        <p>From your My Account Dashboard you have the ability to view a snapshot of
+                                            your
+                                            recent account activity and update your account information. Select a link
+                                            below
                                             to view or edit information.
                                         </p>
                                     </div>
@@ -135,25 +140,51 @@
                                         <div
                                             class="personal-infos flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52">
                                             <h3 class="font-bold mb-2 ">
-                                                Informations personnelles
+                                                Informations du compte
                                             </h3>
                                             <p class="text-gray-400">User</p>
                                             <p class="text-gray-400">user@gmail.com</p>
                                         </div>
                                         <div
                                             class="adress flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52">
-                                            <h3 class="font-bold mb-2 ">Carnet d'adress</h3>
+                                            <h3 class="font-bold mb-2 ">Carnet d'adresse</h3>
                                             <p class="text-gray-400">Maroc</p>
                                             <p class="text-gray-400">Casabalanca</p>
                                             <p class="text-gray-400">4247 Ashford Drive Virginia - VA-20006 - USA
                                                 (+0) 900901904</p>
                                         </div>
+                                        <div
+                                            class="adress flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52 overflow-auto">
+                                            <h3 class="font-bold mb-2  overflow-auto">Description</h3>
+                                            <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Sequi voluptate atque perferendis illo vero fugiat itaque porro
+                                                delectus officiis asperiores? Ipsum ipsa tempore error alias.</p>
+                                        </div>
                                     </div>
-    
+
                                 </div>
                                 <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                     id="tabs-profile03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
-                                    Tab 2 content
+                                    <h2 class="font-semibold py-5">Liste des services</h2>
+                                    <div
+                                        class="adress flex-1 p-2 bg-slate-50 rounded-2xl flex-1 border border-stroke h-52">
+                                        <div>
+                                            <div class="service px-4 py-4 flex flex-wrap gap-2">
+                                                <span
+                                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-300 border">Vidange</span>
+                                                <span
+                                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-300 border">Dépannage</span>
+                                                <span
+                                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-300 border">Vidange</span>
+                                                <span
+                                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-300 border">
+                                                    Lavage</span>
+                                                <span
+                                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-300 border">
+                                                    Lavage</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                     id="tabs-messages03" role="tabpanel" aria-labelledby="tabs-profile-tab03">
@@ -190,7 +221,7 @@
                                                         class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                                                         placeholder="New email" aria-label="Username" id="email"
                                                         aria-describedby="basic-addon1" />
-    
+
                                                 </div>
                                                 <button type="button"
                                                     class="mt-2 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -211,7 +242,7 @@
                                 </div>
                                 <div class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                                     id="tabs-contact03" role="tabpanel" aria-labelledby="tabs-contact-tab03">
-    
+
                                 </div>
                             </div>
 
