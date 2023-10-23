@@ -202,9 +202,9 @@
                                 </p>
                             </div>
                         </div>
-
-
                     </div>
+
+
 
                     <!-- Carousel controls - prev item-->
                     <button
@@ -236,6 +236,7 @@
             </div>
         </div>
 
+
         <!-- <div class="w-full flex flex-col items-center justify-centerpx-24 px-5 relative -mt-5 lg:-mt-10">
 
             <div class="search-page-form w-full  max-w-[1440px] relative mb-4 absolute z-[999] ">
@@ -261,7 +262,7 @@
 
         </div> -->
 
-
+        <!-- ================ filter city  =========== -->
         <div class="w-full flex flex-col items-center justify-center px-4  mt-4">
             <div class="content-filter w-full  max-w-[1440px] relative mb-4">
                 <div class="flex lg:items-center wrap justify-center w-full gap-5">
@@ -282,6 +283,10 @@
 
             </div>
         </div>
+
+
+
+        <!-- ================  filter categories  =================== -->
         <div class="categoties  w-full flex flex-col items-center justify-center px-4  mt-4 ">
 
             <div
@@ -315,9 +320,7 @@
         </div>
 
 
-        <!-- cards service -->
-
-
+        <!-- ============     cards service  ================ -->
         <section class='px-2 lg:px-4 w-full flex flex-col gap-10 items-center justify-center py-5 px-5 min-h-max '>
             <div
                 class="wrapper grid lg:grid-cols-3 gap-8 justify-items-center items-center mx-auto grid-cols-1 md:grid-cols-2 sm:grid-cols-1">
@@ -371,6 +374,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div
                     class="card Maintenance shadow-lg rounded-2xl w-full lg:w-96 grid pb-5 bg-white ease-in duration-300 hover:translate-y-[-.25rem]">
                     <div class="card-content ">
@@ -698,122 +702,171 @@
                     </div>
                 </div>
                 <div
-                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/859" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Entrepisene </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
+                    class="card Dépannage h-max shadow-lg rounded-2xl w-full lg:w-96 grid pb-5 bg-white ease-in duration-300 hover:translate-y-[-0.25rem]">
+                    <div class="card-content ">
+                        <div class="cover h-24 bg-[#ffc107] rounded-t-xl">
+                        </div>
+                        <div class="image-profile w-full flex justify-center items-center px-2">
+                            <a href="" class=" w-28 -mt-14  ">
+                                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(13).jpg"
+                                    class="rounded-full drop-shadow-2xl w-52 object-cover hover:drop-shadow-3xl duration-300"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div
+                            class="card-profile-wrapper w-full flex  justify-between items-center px-4 self-center my-4">
+                            <a href='/' class="user flex gap-2">
+                                <div class="flex flex-col">
+                                    <h3 class="text-slate-950 font-bold hover:text-[#ffc107] duration-300">Jhon Doe</h3>
+                                    <span class="text-slate-600 text-sm"> Garage </span>
+                                </div>
+                            </a>
+                            <div class="flex gap-5">
+                                <a href='/' class="call text-slate-600 text-sm pr-2 hover:text-[#ffc107]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--vibrant)"
+                                        class="w-6 h-6">
+                                        <path fill-rule="evenodd"
+                                            d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
 
+                                </a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="service px-4 border-t py-4 flex flex-wrap gap-2">
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Dépannage</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
 
-
                 <div
-                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/859" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Entrepisene </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
+                    class="card Dépannage h-max shadow-lg rounded-2xl w-full lg:w-96 grid pb-5 bg-white ease-in duration-300 hover:translate-y-[-0.25rem]">
+                    <div class="card-content ">
+                        <div class="cover h-24 bg-[#ffc107] rounded-t-xl">
+                        </div>
+                        <div class="image-profile w-full flex justify-center items-center px-2">
+                            <a href="" class=" w-28 -mt-14  ">
+                                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(27).jpg"
+                                    class="rounded-full drop-shadow-2xl w-52 object-cover hover:drop-shadow-3xl duration-300"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div
+                            class="card-profile-wrapper w-full flex  justify-between items-center px-4 self-center my-4">
+                            <a href='/' class="user flex gap-2">
+                                <div class="flex flex-col">
+                                    <h3 class="text-slate-950 font-bold hover:text-[#ffc107] duration-300">Jhon Doe</h3>
+                                    <span class="text-slate-600 text-sm"> Garage </span>
+                                </div>
+                            </a>
+                            <div class="flex gap-5">
+                                <a href='/' class="call text-slate-600 text-sm pr-2 hover:text-[#ffc107]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--vibrant)"
+                                        class="w-6 h-6">
+                                        <path fill-rule="evenodd"
+                                            d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
 
+                                </a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="service px-4 border-t py-4 flex flex-wrap gap-2">
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Dépannage</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
                 <!-- component -->
-                <div class="card Maintenance bg-cover bg-center rounded-2xl   text-white py-20 px-9 object-fill"
+                <div class="card Maintenance w-full h-max bg-cover bg-center rounded-2xl  text-white  object-fill"
                     style="background-image: url(https://plus.unsplash.com/premium_photo-1661954236764-6c567b653d49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)">
-                    <div class="md:w-1/2  bg-blend-overlay ">
-                        <p class="font-bold text-sm text-white uppercase">Services</p>
-                        <p class="text-3xl font-bold text-white">Garage Maarif</p>
-                        <p class="text-2xl mb-10 leading-none text-gray-200">Équipe spécialisée pour vous</p>
-                        <a href="#"
-                            class="bg-red-700 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">
-                            Contact us</a>
+                    <div class="overlay bg-black/20 py-20 px-9 rounded-2xl">
+                        <div class="md:w-1/2  bg-blend-overlay ">
+                            <p class="font-bold text-sm text-white uppercase">Services</p>
+                            <p class="text-3xl font-bold text-white">Garage Maarif</p>
+                            <p class="text-2xl mb-10 leading-none text-gray-200">Équipe spécialisée pour vous</p>
+                            <a href="#"
+                                class="bg-red-700 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">
+                                Contact us</a>
+                        </div>
                     </div>
                 </div>
 
 
                 <div
-                    class="card Dépannage  card-container bg-white  pt-0 pb-3 rounded-2xl m-2 flex flex-col items-center gap-3 shadow-xl lg:w-96 w-full ease-in duration-300 hover:translate-y-2">
-                    <div class="card-cover">
-                        <img src="https://unsplash.it/899" alt="card__image"
-                            class="card__image  rounded-t-xl  w-96 object-cover h-52" width="300px" />
-                    </div>
-                    <div class="title-service w-full text-center flex text-xl px-4">
-                        <h2 class="text-slate-950 font-extrabold">Dépanneur</h2>
-                    </div>
-                    <div class="service px-4">
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm">Vidange - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Lavage - </span>
-                        <span class="call text-slate-900 text-sm"> Déppannage -</span>
-                    </div>
-                    <div class="card-profile-wrapper w-full flex justify-between items-center px-4 self-center my-2">
-                        <a href='/' class="user flex gap-2">
-                            <div class="profile-pic">
-                                <img src="https://i.pravatar.cc/40?Image=450" alt="user__image"
-                                    class="user__image rounded-full " />
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="text-slate-950 font-bold">Jhon Doe</h3>
-                                <span class="text-slate-600 text-sm"> Entrepisene </span>
-                            </div>
-                        </a>
-                        <a href='/' class="call text-slate-600 text-sm pr-2">
-                            <i class='bx bxs-phone' style="font-size: 24px; color:var(--vibrant)"></i>
-                        </a>
+                    class="card Dépannage h-max shadow-lg rounded-2xl w-full lg:w-96 grid pb-5 bg-white ease-in duration-300 hover:translate-y-[-0.25rem]">
+                    <div class="card-content ">
+                        <div class="cover h-24 bg-[#ffc107] rounded-t-xl">
+                        </div>
+                        <div class="image-profile w-full flex justify-center items-center px-2">
+                            <a href="" class=" w-28 -mt-14  ">
+                                <img src="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(30).jpg"
+                                    class="rounded-full drop-shadow-2xl w-52 object-cover hover:drop-shadow-3xl duration-300"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div
+                            class="card-profile-wrapper w-full flex  justify-between items-center px-4 self-center my-4">
+                            <a href='/' class="user flex gap-2">
+                                <div class="flex flex-col">
+                                    <h3 class="text-slate-950 font-bold hover:text-[#ffc107] duration-300">Jhon Doe</h3>
+                                    <span class="text-slate-600 text-sm"> Garage </span>
+                                </div>
+                            </a>
+                            <div class="flex gap-5">
+                                <a href='/' class="call text-slate-600 text-sm pr-2 hover:text-[#ffc107]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--vibrant)"
+                                        class="w-6 h-6">
+                                        <path fill-rule="evenodd"
+                                            d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z"
+                                            clip-rule="evenodd" />
+                                    </svg>
 
+                                </a>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="service px-4 border-t py-4 flex flex-wrap gap-2">
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Dépannage</span>
+                                <span
+                                    class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">Vidange</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                                <span class="call text-slate-500 text-xs p-2 rounded-full border-gray-100 border">
+                                    Lavage</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
