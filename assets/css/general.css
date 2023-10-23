@@ -136,3 +136,8 @@ p,h1{
         font-size: clamp(2em, calc((var(--vw)*9)/10), 3em);
     }
 }
+
+::selection{
+    background-color: var(--vibrant);
+    color: var(--text-color);
+}
