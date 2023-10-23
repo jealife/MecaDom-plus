@@ -246,9 +246,9 @@ input[type="search"]::-webkit-search-cancel-button {
     align-items: center;
     font-weight: 600;
 }
-.icon-bottom img{
+/* .icon-bottom img{
     width: 120px;
-}
+} */
 
 
 .services-block {
